@@ -1,0 +1,35 @@
+{
+  "name": "shopping-list-mern",
+  "version": "1.0.0",
+  "description": "MERN stack, shopping list",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node .",
+    "server": "nodemon .",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git remote add origin https://github.com/anst9000/shopping-list-mern.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "Express",
+    "React",
+    "Node"
+  ],
+  "author": "Anders Stromberg <coltlaboy@yahoo.se>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.1.0",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
