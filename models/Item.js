@@ -7,14 +7,6 @@ const ItemSchema = new Schema({
     type: String,
     required: true,
   },
-  quantity: {
-    type: Number,
-    required: false,
-  },
-  unit: {
-    type: String,
-    required: false,
-  },
   date: {
     type: Date,
     default: Date.now,
